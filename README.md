@@ -1,10 +1,12 @@
-# How to Use
+# Tutorials!
 
 <p align="center">
 <a href="https://github.com/WVarduinoclub/tutorials"> <img src="https://img.shields.io/badge/License-GPLv3-blue.svg"> </a>
 <a href="https://github.com/WVarduinoclub/tutorials"> <img src="https://img.shields.io/badge/Maintained%3F-yes-orange.svg"> </a>
 <a href="https://github.com/WVarduinoclub/tutorials"> <img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat"> </a>
 </p>
+
+### How To Use:
 
 1. Install [MkDocs](https://www.mkdocs.org/#getting-started)
 2. Fork the project (remote)
