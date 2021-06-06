@@ -157,7 +157,7 @@
     
       <div class="md-header__source">
         
-<a href="https://github.com/WVarduinoclub/tutorials" title="Go to repository" class="md-source" data-md-component="source">
+<a href="https://github.com/WVarduinoclub/tutorials/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
@@ -253,7 +253,7 @@
   
     <div class="md-nav__source">
       
-<a href="https://github.com/WVarduinoclub/tutorials" title="Go to repository" class="md-source" data-md-component="source">
+<a href="https://github.com/WVarduinoclub/tutorials/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
@@ -386,6 +386,27 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#strings" class="md-nav__link">
+    Strings
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#booleans" class="md-nav__link">
+    Booleans
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#type-function" class="md-nav__link">
+    Type Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#basic-arithmetic" class="md-nav__link">
     Basic Arithmetic
   </a>
@@ -414,6 +435,18 @@
     <li class="md-nav__item">
       <a href="../lesson2/" class="md-nav__link">
         Lists, Sets, Dictionaries, and Tuples
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lesson3/" class="md-nav__link">
+        A quick recap
       </a>
     </li>
   
@@ -465,6 +498,27 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#strings" class="md-nav__link">
+    Strings
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#booleans" class="md-nav__link">
+    Booleans
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#type-function" class="md-nav__link">
+    Type Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#basic-arithmetic" class="md-nav__link">
     Basic Arithmetic
   </a>
@@ -490,6 +544,10 @@
             <article class="md-content__inner md-typeset">
               
                 
+                  <a href="https://github.com/WVarduinoclub/tutorials/edit/master/docs/python-tutorials/lesson1.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
                 
                 <h1 id="the-basics">The Basics</h1>
 <p>Created by: Sean Boerhout</p>
@@ -497,67 +555,139 @@
 <p>So where do we start? Well, nearly all programming involves <strong>variables</strong>, or snippets of 
 memory in your computer that holds some data. Say I wanted to take user input, or record the 
 number of times someone pressed a button. You'd need variables to do this!</p>
-<p>Let's start with a simple example: the number of minecraft worlds I have on my computer to date, which is 27.</p>
-<pre><code>minecraft_world_count = 27
-</code></pre>
-<p>Here, <code>minecraft_world_count</code> is my variable, and it holds a number (an integer to be exact). Different types of 
+<p>Let's start with a simple example: the number of minecraft worlds I have on my computer to date, which is 27.
+<div class="highlight"><pre><span></span><code><span class="n">minecraft_world_count</span> <span class="o">=</span> <span class="mi">27</span>
+</code></pre></div>
+Here, <code>minecraft_world_count</code> is my variable, and it holds a number (an integer to be exact). Different types of 
 data need to be held with different types of variables; for example, 1.1 isn't an integer anymore, it's a rational 
 number (in coding terms, a floating-point number). </p>
 <p>Another cool thing in python is that you can easily represent large numbers. Whenever you assign a number to a variable,
 you can't use commas to make it easily readable. For example, </p>
-<pre><code>myNumber = 100,000
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="n">myNumber</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span><span class="mi">000</span>
+</code></pre></div>
 <p>Will actually cause python to think that your number is of type <strong>tuple</strong>, which is a data type that doesn't allow
 you to change its value. To tell python that the number is still an integer you can do this:</p>
-<pre><code>my_number = 100_00
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="n">my_number</span> <span class="o">=</span> <span class="mi">100_00</span>
+</code></pre></div>
 <h3 id="printing">Printing</h3>
 <p>Now, suppose I wanted to print the value of a variable as an output. Python has a useful <strong>function</strong> called <code>print()</code> for
 this, so </p>
-<p><code>print(myNumber)</code></p>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">myNumber</span><span class="p">)</span>
+</code></pre></div>
 <p>will output <code>100000</code>.</p>
-<p>Say I wanted to give my favorite world a name, and hold that name in a variable. I could do it like this:</p>
-<pre><code>minecraft_world_name = &quot;Zombie manhunt&quot;
-</code></pre>
-<p>And in this case, the variable would be of type <code>string</code>. </p>
+<p>If I wanted to combine a string with the number, all you need to do is pass another <strong>argument</strong> (what <code>print()</code> will print)
+to <code>print()</code>.</p>
+<p><div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;My number is &quot;</span><span class="p">,</span> <span class="n">myNumber</span><span class="p">)</span>
+</code></pre></div>
+Output:
+<div class="highlight"><pre><span></span><code>My number is 100000
+</code></pre></div></p>
+<p>One more thing: what if we wanted to format a string into different parts i.e. number here, string there without using commas? 
+Python allows us to do this super easily too:</p>
+<p><div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;My number is </span><span class="si">{</span> <span class="n">myNumber</span> <span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+Output:
+<div class="highlight"><pre><span></span><code>My number is 100000
+</code></pre></div>
+Python recognizes that you wanted a formatted string by prefixing the string with an <em>f</em>. Then you can use curly braces to say where
+you want the number! (You'll see how awesome this is in future lessons).</p>
+<h3 id="strings">Strings</h3>
+<p>Say I wanted to give my favorite world a name, and hold that name in a variable. I could do it like this:
+<div class="highlight"><pre><span></span><code>minecraft_world_name = &quot;Zombie manhunt&quot;
+</code></pre></div>
+And in this case, the variable would be of type <code>string</code>. </p>
 <p>In python, strings are neat because you can add characters to them like this:</p>
-<pre><code>my_name = &quot;Bill&quot;
-my_full_name = my_name + &quot; Mitchell&quot;
-print(my_full_name)
-</code></pre>
-<p>Output:</p>
-<pre><code>Sean Boerhout
-</code></pre>
+<p><div class="highlight"><pre><span></span><code><span class="n">my_name</span> <span class="o">=</span> <span class="s2">&quot;Bill&quot;</span>
+<span class="n">my_full_name</span> <span class="o">=</span> <span class="n">my_name</span> <span class="o">+</span> <span class="s2">&quot; Mitchell&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_full_name</span><span class="p">)</span>
+</code></pre></div>
+Output:
+<div class="highlight"><pre><span></span><code>Bill Mitchell
+</code></pre></div></p>
+<p>There are also some cool <strong>methods</strong> to modify strings:</p>
+<div class="tabbed-set" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">upper()</label><div class="tabbed-content">
+<ul>
+<li>Makes a string uppercase</li>
+</ul>
+<p><div class="highlight"><pre><span></span><code><span class="n">rock</span> <span class="o">=</span> <span class="s2">&quot;let&#39;s rock&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">rock</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span>
+</code></pre></div>
+Output:
+<div class="highlight"><pre><span></span><code>LET&#39;S ROCK 
+</code></pre></div></p>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">lower()</label><div class="tabbed-content">
+<ul>
+<li>Makes a string lowercase</li>
+</ul>
+<p><div class="highlight"><pre><span></span><code><span class="n">fruit</span> <span class="o">=</span> <span class="s2">&quot;APPLES&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">fruit</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
+</code></pre></div>
+Output:
+<div class="highlight"><pre><span></span><code>apples
+</code></pre></div></p>
+</div>
+<input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><label for="__tabbed_1_3">title()</label><div class="tabbed-content">
+<ul>
+<li>Capitalizes a string</li>
+</ul>
+<p><div class="highlight"><pre><span></span><code><span class="n">my_name</span> <span class="o">=</span> <span class="s2">&quot;bill mitchell&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_name</span><span class="o">.</span><span class="n">title</span><span class="p">())</span>
+</code></pre></div>
+Output:
+<div class="highlight"><pre><span></span><code>Bill Mitchell
+</code></pre></div></p>
+</div>
+</div>
+<h3 id="booleans">Booleans</h3>
 <p>One more example: suppose I wanted to say whether python is cool. I could use a <code>boolean</code> type variable:
 <code>python_is_awesome = True</code></p>
+<h3 id="type-function">Type Function</h3>
+<p>If you ever want to know what the type of something is, then you can use a function called <code>type()</code>. This
+outputs the type of the variable:</p>
+<p><div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="mf">1.1</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="mi">1000000000</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="s2">&quot;one&quot;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]))</span>  <span class="c1"># Coming next lesson!</span>
+</code></pre></div>
+Output:
+<div class="highlight"><pre><span></span><code><span class="o">&lt;</span><span class="nb">type</span> <span class="s1">&#39;int&#39;</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="nb">type</span> <span class="s1">&#39;float&#39;</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="nb">type</span> <span class="s1">&#39;int&#39;</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="nb">type</span> <span class="s1">&#39;str&#39;</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="nb">type</span> <span class="s1">&#39;list&#39;</span><span class="o">&gt;</span>
+</code></pre></div></p>
 <h3 id="basic-arithmetic">Basic Arithmetic</h3>
 <p>So... pure variables are boring - you've probably figured that out by now. Can we modify them?</p>
 <p>In fact, yes! And it's super easy. Whenever you modify a variable, python essentially overrides one of the variables. 
 Say I just made a new minecraft world. To add another world, I'd just do:</p>
-<p><code>minecraft_world_count = minecraft_world_count + 1</code></p>
+<div class="highlight"><pre><span></span><code><span class="n">minecraft_world_count</span> <span class="o">=</span> <span class="n">minecraft_world_count</span> <span class="o">+</span> <span class="mi">1</span>
+</code></pre></div>
 <p>Super easy! Since programmers use this kind of arithmetic very often, however, there is shorthand notation for this:</p>
-<p><code>minecraft_world_count += 1</code></p>
-<pre><code>+= # variable = variable + increment
--= # variable = variable - increment
-*= # variable = variable * increment
-/= # variable = variable / increment
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="n">minecraft_world_count</span> <span class="o">+=</span> <span class="mi">1</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">+=</span> <span class="c1"># variable = variable + increment</span>
+<span class="o">-=</span> <span class="c1"># variable = variable - increment</span>
+<span class="o">*=</span> <span class="c1"># variable = variable * increment</span>
+<span class="o">/=</span> <span class="c1"># variable = variable / increment</span>
+</code></pre></div>
 <h3 id="commenting">Commenting</h3>
 <p>What if you have code and you want to write a description about it? Just writing next to it won't work because python
 will think that you're still trying to code. In this case, you can use <strong>comments</strong>. Simply prefix any words/sentences/phrases
 with a hashtag: <code>#</code>. For bulk commenting, you can use three quotes.</p>
-<p>Example:</p>
-<pre><code># My name is Zephyr:
-print(&quot;My name is Zephyr!&quot;)
+<p>Example:
+<div class="highlight"><pre><span></span><code><span class="c1"># My name is Zephyr:</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;My name is Zephyr!&quot;</span><span class="p">)</span>
 
-&quot;&quot;&quot;
-Do you like striders in minecraft?
-I do... they are fun, but could use
-more health. On a scale of 1-10, 
-this is how much I like striders:
-&quot;&quot;&quot;
-print(7)
-</code></pre>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Do you like striders in minecraft?</span>
+<span class="sd">I do... they are fun, but could use</span>
+<span class="sd">more health. On a scale of 1-10, </span>
+<span class="sd">this is how much I like striders:</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
+</code></pre></div></p>
                 
               
               
@@ -634,7 +764,7 @@ print(7)
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.d351de03.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top", "navigation.sections"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.d351de03.min.js", "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.34eae1b6.min.js"></script>
