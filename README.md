@@ -12,7 +12,7 @@
 2. Install [Material for MkDocs](https://github.com/squidfunk/mkdocs-material)
 3. Fork the project (remote)
 4. Clone the project (local)
-5. Make your edits on the master branch. Please preview them with `mkdocs serve` to save time.
+5. Make your edits are on the master branch. Please preview them with `mkdocs serve` to save time.
 6. Commit the changes to the master branch (you can use an intermediate branch for initial changes just in case). 
 7. Push these changes to your remote forked repository. 
 8. Submit a pull request for the `master -> master branches`. Please wait for this to be accepted before continuing further.
