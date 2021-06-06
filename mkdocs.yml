@@ -4,10 +4,16 @@ site_name: WV Arduino Club tutorials
 repo_url: https://github.com/WVarduinoclub/tutorials
 repo_name: Arduino Club Tutorials
 
-# edit button specs (right now, the edit is disabled)
-edit_uri: ""
+# edit button specs (right now, the edit is enabled)
+# edit_uri: ""
 
 copyright: Copyright &copy; 2021 WV Arduino Club
+
+# Code Highlighting
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed
 
 # Site navigation
 nav:
@@ -17,6 +23,7 @@ nav:
     - 'Setting up python' : 'python-tutorials/Setup.md'
     - 'The Basics' : 'python-tutorials/lesson1.md'
     - 'Lists, Sets, Dictionaries, and Tuples' : 'python-tutorials/lesson2.md'
+    - 'A quick recap' : 'python-tutorials/lesson3.md'
 
 theme:
   name: material
@@ -34,3 +41,4 @@ theme:
   features:
     - navigation.tabs
     - navigation.top
+    - navigation.sections
