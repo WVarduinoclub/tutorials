@@ -1,1 +1,36 @@
-site_name: My Docs
+site_name: WV Arduino Club tutorials
+
+# github repository icon setup
+repo_url: https://github.com/WVarduinoclub/tutorials
+repo_name: Arduino Club Tutorials
+
+# edit button specs (right now, the edit is disabled)
+edit_uri: ""
+
+copyright: Copyright &copy; 2021 WV Arduino Club
+
+# Site navigation
+nav:
+  - Home: 'index.md'
+  - About: 'about.md'
+  - 'Python': 
+    - 'Setting up python' : 'python-tutorials/Setup.md'
+    - 'The Basics' : 'python-tutorials/lesson1.md'
+    - 'Lists, Sets, Dictionaries, and Tuples' : 'python-tutorials/lesson2.md'
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: green
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: orange
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.top
