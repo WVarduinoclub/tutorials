@@ -60,3 +60,10 @@ print(f"{ customer_drink.title() }s costs { drink_prices[customer_drink] } dolla
 #### Try it yourself
 
 <iframe src="https://trinket.io/embed/python3/1a196fccc9" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+### Challenge
+
+Create a fictional character that a user can learn about! You should use at least one dictionary, one input, and one list.
+
+Here is an example:
+<iframe src="https://trinket.io/embed/python3/7a39be2117?outputOnly=true" width="100%" height="150" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
