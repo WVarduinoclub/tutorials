@@ -466,9 +466,22 @@
   
 </li>
         
-          <li class="md-nav__item">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#tuples" class="md-nav__link">
     Tuples
+  </a>
+  
+    <nav class="md-nav" aria-label="Tuples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#useful-methods_3" class="md-nav__link">
+    Useful methods
   </a>
   
 </li>
@@ -612,9 +625,22 @@
   
 </li>
         
-          <li class="md-nav__item">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#tuples" class="md-nav__link">
     Tuples
+  </a>
+  
+    <nav class="md-nav" aria-label="Tuples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#useful-methods_3" class="md-nav__link">
+    Useful methods
   </a>
   
 </li>
@@ -890,7 +916,7 @@ Output:
 </div>
 </div>
 <h4 id="useful-methods_2">Useful methods</h4>
-<div class="tabbed-set" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><label for="__tabbed_5_1">keys()</label><div class="tabbed-content">
+<div class="tabbed-set" data-tabs="5:3"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><label for="__tabbed_5_1">keys()</label><div class="tabbed-content">
 <ul>
 <li>returns all the keys of a dictionary in the form of a list</li>
 </ul>
@@ -922,8 +948,79 @@ Output:
 <div class="highlight"><pre><span></span><code><span class="n">dict_values</span><span class="p">([</span><span class="s1">&#39;python&#39;</span><span class="p">,</span> <span class="s1">&#39;WV Arduino Club&#39;</span><span class="p">,</span> <span class="mi">100000</span><span class="p">])</span>
 </code></pre></div></p>
 </div>
+<input id="__tabbed_5_3" name="__tabbed_5" type="radio" /><label for="__tabbed_5_3">items()</label><div class="tabbed-content">
+<ul>
+<li>returns the items of the dictionary as a list</li>
+</ul>
+<p>You can use a for loop to access the list as such:</p>
+<p><div class="highlight"><pre><span></span><code><span class="n">course</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="s2">&quot;language&quot;</span> <span class="p">:</span> <span class="s2">&quot;python&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;Instructor&quot;</span> <span class="p">:</span> <span class="s2">&quot;WV Arduino Club&quot;</span>
+<span class="p">}</span>
+<span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">values</span> <span class="ow">in</span> <span class="n">course</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+  <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The course </span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s2"> is </span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+Output:
+<div class="highlight"><pre><span></span><code><span class="n">The</span> <span class="n">course</span> <span class="n">Instructor</span> <span class="ow">is</span> <span class="n">WV</span> <span class="n">Arduino</span> <span class="n">Club</span>
+<span class="n">The</span> <span class="n">course</span> <span class="n">language</span> <span class="ow">is</span> <span class="n">python</span>
+</code></pre></div></p>
 </div>
-<h4 id="tuples">Tuples</h4>
+</div>
+<h3 id="tuples">Tuples</h3>
+<p>Tuples are nearly axactly like a list, but they can't be modified. Like lists, they also mainting their order (Sets don't!).
+Also, indexing works exactly the same way:</p>
+<p><div class="highlight"><pre><span></span><code><span class="n">chemistry_consts</span> <span class="o">=</span> <span class="p">(</span><span class="mf">6.022</span><span class="p">,</span> <span class="mf">2.998</span><span class="p">,</span> <span class="mf">6.626</span><span class="p">)</span>
+<span class="c1">#                  ^ Tuples use parens ^</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">chemistry_consts</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</code></pre></div>
+Output:
+<div class="highlight"><pre><span></span><code><span class="mf">6.022</span>
+</code></pre></div></p>
+<p>As mentioned, you can't modify them:
+<div class="highlight"><pre><span></span><code><span class="n">chemistry_consts</span> <span class="o">=</span> <span class="p">(</span><span class="mf">6.022</span><span class="p">,</span> <span class="mf">2.998</span><span class="p">,</span> <span class="mf">6.626</span><span class="p">)</span>
+<span class="n">chemistry_consts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mf">8.314</span><span class="p">)</span>
+</code></pre></div>
+Output:
+<div class="highlight"><pre><span></span><code><span class="n">Line</span> <span class="mi">2</span><span class="p">:</span> <span class="ne">AttributeError</span><span class="p">:</span> <span class="s1">&#39;tuple&#39;</span> <span class="nb">object</span> <span class="n">has</span> <span class="n">no</span> <span class="n">attribute</span> <span class="s1">&#39;append&#39;</span>
+</code></pre></div>
+That's an error! The <code>append()</code> method doesn't exist for tuples!</p>
+<p>Instead, we can create new tuples that have the elements we want from old tuples. </p>
+<p><div class="highlight"><pre><span></span><code><span class="n">chemistry_consts</span> <span class="o">=</span> <span class="p">(</span><span class="mf">6.022</span><span class="p">,</span> <span class="mf">2.998</span><span class="p">,</span> <span class="mf">6.626</span><span class="p">)</span>
+<span class="n">updated_chemistry_consts</span> <span class="o">=</span> <span class="n">chemistry_consts</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">updated_chemistry_consts</span><span class="p">)</span>
+</code></pre></div>
+Output:
+<div class="highlight"><pre><span></span><code>(6.022, 2.998)
+</code></pre></div></p>
+<h4 id="useful-methods_3">Useful methods</h4>
+<p>What can we do to tuples?</p>
+<div class="tabbed-set" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><label for="__tabbed_6_1">count()</label><div class="tabbed-content">
+<ul>
+<li>returns number of times a value is in a certain tuple</li>
+</ul>
+<p><div class="highlight"><pre><span></span><code><span class="n">chemistry_consts</span> <span class="o">=</span> <span class="p">(</span><span class="mf">6.022</span><span class="p">,</span> <span class="mf">2.998</span><span class="p">,</span> <span class="mf">6.626</span><span class="p">,</span> <span class="mf">2.998</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">chemistry_consts</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="mf">2.998</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">chemistry_consts</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="mf">6.022</span><span class="p">))</span>
+</code></pre></div>
+Output:
+<div class="highlight"><pre><span></span><code><span class="mi">2</span>
+<span class="mi">1</span>
+</code></pre></div></p>
+</div>
+<input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><label for="__tabbed_6_2">index()</label><div class="tabbed-content">
+<ul>
+<li>returns index of a the first instance of a certain item in the tuple</li>
+</ul>
+<p><div class="highlight"><pre><span></span><code><span class="n">chemistry_consts</span> <span class="o">=</span> <span class="p">(</span><span class="mf">6.022</span><span class="p">,</span> <span class="mf">2.998</span><span class="p">,</span> <span class="mf">6.626</span><span class="p">,</span> <span class="mf">2.998</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">chemistry_consts</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="mf">2.998</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">chemistry_consts</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="mf">6.022</span><span class="p">))</span>
+</code></pre></div>
+Output:
+<div class="highlight"><pre><span></span><code><span class="mi">1</span>
+<span class="mi">0</span>
+</code></pre></div></p>
+</div>
+</div>
                 
               
               
