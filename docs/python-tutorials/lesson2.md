@@ -358,4 +358,94 @@ Here are the counterparts to ```append()``` and ```pop()``` but for dictionaries
     dict_values(['python', 'WV Arduino Club', 100000])
     ```
 
-#### Tuples
+=== "items()"
+
+    - returns the items of the dictionary as a list
+
+    You can use a for loop to access the list as such:
+
+    ``` python
+    course = {
+      "language" : "python",
+      "Instructor" : "WV Arduino Club"
+    }
+    for key, values in course.items():
+      print(f"The course {key} is {value}")
+    ```
+    Output:
+    ``` python
+    The course Instructor is WV Arduino Club
+    The course language is python
+    ```
+
+### Tuples
+
+Tuples are nearly axactly like a list, but they can't be modified. Like lists, they also mainting their order (Sets don't!).
+Also, indexing works exactly the same way:
+
+```python
+chemistry_consts = (6.022, 2.998, 6.626)
+#                  ^ Tuples use parens ^
+print(chemistry_consts[0])
+```
+Output:
+```python
+6.022
+```
+
+As mentioned, you can't modify them:
+```python
+chemistry_consts = (6.022, 2.998, 6.626)
+chemistry_consts.append(8.314)
+```
+Output:
+```python
+Line 2: AttributeError: 'tuple' object has no attribute 'append'
+```
+That's an error! The ```append()``` method doesn't exist for tuples!
+
+Instead, we can create new tuples that have the elements we want from old tuples. 
+
+```python
+chemistry_consts = (6.022, 2.998, 6.626)
+updated_chemistry_consts = chemistry_consts[0:2]
+print(updated_chemistry_consts)
+```
+Output:
+```
+(6.022, 2.998)
+```
+
+#### Useful methods
+
+What can we do to tuples?
+
+=== "count()"
+
+    - returns number of times a value is in a certain tuple
+
+    ``` python
+    chemistry_consts = (6.022, 2.998, 6.626, 2.998)
+    print(chemistry_consts.count(2.998))
+    print(chemistry_consts.count(6.022))
+    ```
+    Output:
+    ``` python
+    2
+    1
+    ```
+
+=== "index()"
+
+    - returns index of a the first instance of a certain item in the tuple
+
+    ``` python
+    chemistry_consts = (6.022, 2.998, 6.626, 2.998)
+    print(chemistry_consts.index(2.998))
+    print(chemistry_consts.index(6.022))
+    ```
+    Output:
+    ``` python
+    1
+    0
+    ```
