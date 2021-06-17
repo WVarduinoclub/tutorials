@@ -14,7 +14,7 @@
     
     
       
-        <title>A quick recap - WV Arduino Club tutorials</title>
+        <title>If statements and operators - WV Arduino Club tutorials</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#a-quick-recap" class="md-skip">
+        <a href="#if-statements-and-operators" class="md-skip">
           Skip to content
         </a>
       
@@ -93,7 +93,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              A quick recap
+              If statements and operators
             
           </span>
         </div>
@@ -361,6 +361,18 @@
             
   
   
+  
+    <li class="md-nav__item">
+      <a href="../lesson3/" class="md-nav__link">
+        A quick recap
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
     
   
   
@@ -373,12 +385,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          A quick recap
+          If statements and operators
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        A quick recap
+        If statements and operators
       </a>
       
         
@@ -396,22 +408,56 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#finished-code" class="md-nav__link">
-    Finished Code
+  <a href="#operators" class="md-nav__link">
+    Operators
+  </a>
+  
+    <nav class="md-nav" aria-label="Operators">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arithmetic-operators" class="md-nav__link">
+    Arithmetic Operators
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comparison-operators" class="md-nav__link">
+    Comparison Operators
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logical-operators" class="md-nav__link">
+    Logical Operators
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#else" class="md-nav__link">
+    Else
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#try-it-yourself" class="md-nav__link">
-    Try it yourself
+  <a href="#elif" class="md-nav__link">
+    Elif
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#challenge" class="md-nav__link">
-    Challenge
+  <a href="#scope" class="md-nav__link">
+    Scope
   </a>
   
 </li>
@@ -420,18 +466,6 @@
   
 </nav>
       
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../lesson4/" class="md-nav__link">
-        If statements and operators
-      </a>
     </li>
   
 
@@ -468,22 +502,56 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#finished-code" class="md-nav__link">
-    Finished Code
+  <a href="#operators" class="md-nav__link">
+    Operators
+  </a>
+  
+    <nav class="md-nav" aria-label="Operators">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arithmetic-operators" class="md-nav__link">
+    Arithmetic Operators
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comparison-operators" class="md-nav__link">
+    Comparison Operators
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logical-operators" class="md-nav__link">
+    Logical Operators
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#else" class="md-nav__link">
+    Else
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#try-it-yourself" class="md-nav__link">
-    Try it yourself
+  <a href="#elif" class="md-nav__link">
+    Elif
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#challenge" class="md-nav__link">
-    Challenge
+  <a href="#scope" class="md-nav__link">
+    Scope
   </a>
   
 </li>
@@ -500,65 +568,146 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/WVarduinoclub/tutorials/edit/master/docs/python-tutorials/lesson3.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/WVarduinoclub/tutorials/edit/master/docs/python-tutorials/lesson4.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="a-quick-recap">A Quick Recap</h1>
-<p>Created by: Sean Boerhout</p>
-<p>Here I'll give you a quick recap of what you've learned in the form of an example.</p>
-<p>Suppose I wanted user input at a vending machine, where customers need to type in the drink that they want. 
-Using a dictionary, I can easily relate the name of that drink to a price:
-<div class="highlight"><pre><span></span><code><span class="n">drink_prices</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="s2">&quot;sprite&quot;</span> <span class="p">:</span> <span class="mf">2.50</span><span class="p">,</span>
-  <span class="s2">&quot;coke&quot;</span> <span class="p">:</span> <span class="mf">2.00</span><span class="p">,</span>
-  <span class="s2">&quot;fanta&quot;</span> <span class="p">:</span> <span class="mf">3.00</span>
-<span class="p">}</span>
+                <h1 id="if-statements-and-operators">If Statements and Operators</h1>
+<p>Ok, I'll admit it. So far, everything has a been a little boring. Time to add some conditions
+to our code!</p>
+<p>The <code>if</code> statement is crucial to being able to program, and it exists in nearly every programming
+language. It allows you to make comparisons in the nature of: <em>if this, then that</em>.</p>
+<p>Here's an example:
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="mi">1</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;one equals one&quot;</span><span class="p">);</span>
 </code></pre></div>
-In order to get the user's input, I'll use a cool function called <code>input()</code>. It prompts python to 
-ask for your input and assigns the input to a string:
-<div class="highlight"><pre><span></span><code><span class="n">customer_drink</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
-</code></pre></div>
-Now we can ask someone for their desired drink and tell them the price! 
-<div class="highlight"><pre><span></span><code><span class="n">customer_drink</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">drink_prices</span><span class="p">[</span><span class="n">customer_drink</span><span class="p">])</span>
-</code></pre></div>
-But we can do better than that... let's make the process more friendly with some <code>print()</code>s.
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Welcome! What drink would you like? Please choose from one of the choices below:&quot;</span><span class="p">)</span> 
-<span class="nb">print</span><span class="p">(</span><span class="n">drink_prices</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
-
-<span class="c1"># ask them for their drink and say the price</span>
-<span class="n">customer_drink</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span> <span class="n">customer_drink</span><span class="o">.</span><span class="n">title</span><span class="p">()</span> <span class="si">}</span><span class="s2">s costs </span><span class="si">{</span> <span class="n">drink_prices</span><span class="p">[</span><span class="n">customer_drink</span><span class="p">]</span> <span class="si">}</span><span class="s2"> dollars!&quot;</span><span class="p">)</span>
+Output:
+<div class="highlight"><pre><span></span><code>one equals one
 </code></pre></div></p>
-<p>But, wait. What if the user makes a typo by using the wrong capitalization? We can ensure that the input
-is always read correctly:
-<div class="highlight"><pre><span></span><code><span class="n">customer_drink</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+<p>As you can see, in the example above, a comparison is being made between the value of <code>1</code> and <code>1</code>. 
+Since they were equal to each other, the if statement continued to the next line, which is 
+in its <strong>scope</strong>. We'll get to scope a little later. </p>
+<h3 id="operators">Operators</h3>
+<p>If you're wondering why the if statement requires double equal signs (<code>==</code>), its because it is an
+<strong>operator</strong>. <strong>Operators</strong> are special symbols that perform an arithmetic, comprison, or logical operation
+(in this case, comparison).</p>
+<p>Some of these you already know! </p>
+<h4 id="arithmetic-operators">Arithmetic Operators</h4>
+<div class="highlight"><pre><span></span><code>2 + 2 = 4   (+, addition operator)
+3 - 2 = 1   (-, subtraction operator)
+2 * 1 = 2   (*, multiplication operator)
+2 / 1 = 2   (/, the division operator)
+2 ** 3 = 8  (**, the exponent operator)
+5 % 2 = 1   (%, the modulus operator)
+13 // 5 = 3 (//, the floor division operator)
 </code></pre></div>
-Since all the keys in our dictionary are lowercase, this will fix that problem.</p>
-<h4 id="finished-code">Finished Code</h4>
-<p>Here's all that code put together:
-<div class="highlight"><pre><span></span><code><span class="n">drink_prices</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="s2">&quot;sprite&quot;</span> <span class="p">:</span> <span class="mf">2.50</span><span class="p">,</span>
-  <span class="s2">&quot;coke&quot;</span> <span class="p">:</span> <span class="mf">2.00</span><span class="p">,</span>
-  <span class="s2">&quot;fanta&quot;</span> <span class="p">:</span> <span class="mf">3.00</span>
-<span class="p">}</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Welcome! What drink would you like? Please choose from one of the choices below:&quot;</span><span class="p">)</span> 
-<span class="nb">print</span><span class="p">(</span><span class="n">drink_prices</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
-
-<span class="n">customer_drink</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span> <span class="n">customer_drink</span><span class="o">.</span><span class="n">title</span><span class="p">()</span> <span class="si">}</span><span class="s2">s costs </span><span class="si">{</span> <span class="n">drink_prices</span><span class="p">[</span><span class="n">customer_drink</span><span class="p">]</span> <span class="si">}</span><span class="s2"> dollars!&quot;</span><span class="p">)</span>
+<h4 id="comparison-operators">Comparison Operators</h4>
+<div class="highlight"><pre><span></span><code>3 &gt; 2   (&gt;, the greater than operator)
+4 &lt; 5   (&lt;, the less than operator)
+4 == 4  (==, the equal to operator)
+5 != 6  (!=, the not equal operator)  
+5 &gt;=5   (&gt;=, the greater than or equal to operator)
+6 &lt;= 7  (&lt;=, the less than or equal to operator)
+</code></pre></div>
+<h4 id="logical-operators">Logical Operators</h4>
+<div class="tabbed-set" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">and</label><div class="tabbed-content">
+<ul>
+<li>returns True when something and something else are true</li>
+</ul>
+<p><div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">y</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span> <span class="ow">and</span> <span class="n">y</span><span class="p">)</span>
+</code></pre></div>
+Output:
+<div class="highlight"><pre><span></span><code><span class="kc">True</span>
 </code></pre></div></p>
-<h4 id="try-it-yourself">Try it yourself</h4>
-<iframe src="https://trinket.io/embed/python3/1a196fccc9" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-
-<h3 id="challenge">Challenge</h3>
-<p>Create a fictional character that a user can learn about! You should use at least one dictionary, one input, and one list.</p>
-<p>Here is an example:</p>
-<iframe src="https://trinket.io/embed/python3/7a39be2117?outputOnly=true" width="100%" height="150" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">or</label><div class="tabbed-content">
+<ul>
+<li>returns True when something or something else is true</li>
+</ul>
+<p><div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">y</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span> <span class="ow">or</span> <span class="n">y</span><span class="p">)</span>
+</code></pre></div>
+Output:
+<div class="highlight"><pre><span></span><code><span class="kc">True</span>
+</code></pre></div></p>
+</div>
+<input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><label for="__tabbed_1_3">not</label><div class="tabbed-content">
+<ul>
+<li>returns the complement (opposite value of) of a variable</li>
+</ul>
+<p><div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="nb">print</span><span class="p">(</span><span class="ow">not</span> <span class="n">x</span><span class="p">)</span>
+</code></pre></div>
+Output:
+<div class="highlight"><pre><span></span><code><span class="kc">False</span>
+</code></pre></div></p>
+</div>
+</div>
+<p>Now let's look at some more examples of if statements.</p>
+<p><div class="highlight"><pre><span></span><code><span class="n">your_age</span> <span class="o">=</span> <span class="mi">40</span>
+<span class="k">if</span> <span class="n">your_Age</span> <span class="o">&gt;=</span> <span class="mi">21</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You can drink alcohol&quot;</span><span class="p">);</span>
+</code></pre></div>
+Output:
+<div class="highlight"><pre><span></span><code>You can drink alcohol
+</code></pre></div></p>
+<p><div class="highlight"><pre><span></span><code><span class="n">your_name</span> <span class="o">=</span> <span class="s2">&quot;Lars&quot;</span>
+<span class="k">if</span> <span class="n">your_name</span> <span class="o">!=</span> <span class="s2">&quot;Zephyr&quot;</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You aren&#39;t my cat!&quot;</span><span class="p">);</span>
+</code></pre></div>
+Output:
+<div class="highlight"><pre><span></span><code>You aren&#39;t my cat!
+</code></pre></div></p>
+<h3 id="else">Else</h3>
+<p>There is another cool thing we can do with if statements, however. What if we want to do something if an if statement isn't triggered?
+Well, for that we can use the <code>else</code> statement:
+<div class="highlight"><pre><span></span><code><span class="n">your_name</span> <span class="o">=</span> <span class="s2">&quot;Zephyr&quot;</span>
+<span class="k">if</span> <span class="n">your_name</span> <span class="o">!=</span> <span class="s2">&quot;Zephyr&quot;</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You aren&#39;t my cat!&quot;</span><span class="p">);</span>
+<span class="k">else</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You are my cat!&quot;</span><span class="p">)</span>
+</code></pre></div>
+Output:
+<div class="highlight"><pre><span></span><code>You are my cat!
+</code></pre></div></p>
+<h3 id="elif">Elif</h3>
+<p>Additionally, you may want to go into another if statement if an else is triggered. For that, we have teh <code>`elif</code> statement, which stands
+for "else if".  </p>
+<p><div class="highlight"><pre><span></span><code><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Sean&quot;</span>
+<span class="k">if</span> <span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;Jonathan&quot;</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You are my friend&quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;Andrew&quot;</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You are my best friend&quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;Sean&quot;</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You are me!&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Who are you??&quot;</span><span class="p">)</span>
+</code></pre></div>
+Output:
+<div class="highlight"><pre><span></span><code>You are me!
+</code></pre></div></p>
+<p>Notice that the else and the elif statements must come after an if statement. </p>
+<h3 id="scope">Scope</h3>
+<p>But how do we organize what is in the if statement and what isn't? Well, we do that with <strong>scope</strong>. 
+By indenting with a tab, python will be able to determine what code is a part of other code:</p>
+<p><div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="k">if</span> <span class="n">x</span><span class="p">:</span>   <span class="c1"># this will always happen because the condition is true!</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This is in the if statement&quot;</span><span class="p">)</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This is also in the if statement&quot;</span><span class="p">)</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This too!&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This is not in the if statement&quot;</span><span class="p">)</span>
+</code></pre></div>
+Output:
+<div class="highlight"><pre><span></span><code>This is in the if statement
+This is also in the if statement
+This too!
+This is not in the if statement
+</code></pre></div></p>
+<p>The same thing goes for <code>else</code> and <code>elif</code> statements. </p>
                 
               
               
@@ -581,7 +730,7 @@ Since all the keys in our dictionary are lowercase, this will fix that problem.<
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../lesson2/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../lesson3/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -590,25 +739,11 @@ Since all the keys in our dictionary are lowercase, this will fix that problem.<
               <span class="md-footer__direction">
                 Previous
               </span>
-              Lists, Sets, Dictionaries, and Tuples
+              A quick recap
             </div>
           </div>
         </a>
       
-      
-        <a href="../lesson4/" class="md-footer__link md-footer__link--next" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              If statements and operators
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
-        </a>
       
     </nav>
   
