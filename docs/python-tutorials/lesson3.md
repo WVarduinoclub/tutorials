@@ -1,5 +1,5 @@
 # A Quick Recap
-Created by: Sean Boerhout
+Created By: Sean Boerhout
 
 
 Here I'll give you a quick recap of what you've learned in the form of an example.
