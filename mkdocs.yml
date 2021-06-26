@@ -24,7 +24,9 @@ nav:
     - 'The Basics' : 'python-tutorials/lesson1.md'
     - 'Lists, Sets, Dictionaries, and Tuples' : 'python-tutorials/lesson2.md'
     - 'A quick recap' : 'python-tutorials/lesson3.md'
-    - 'If statements and operators' : 'python-tutorials/lesson4.md'
+    - 'If Statements and Operators' : 'python-tutorials/lesson4.md'
+    - 'For and While loops' : 'python-tutorials/lesson5.md'
+    - 'Custom functions' : 'python-tutorials/lesson6.md'
 
 
 theme:
