@@ -1,5 +1,6 @@
 # For and While loops
-Created By: Sean Boerhout
+
+Created By: [Sean Boerhout](https://seanboe.github.io)
 
 Suppose we have a list of strings and want to perform an operation involving every element of that string; maybe, printing out the names of 
 everyone in a school classroom:

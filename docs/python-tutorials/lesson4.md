@@ -1,5 +1,7 @@
 # If Statements and Operators
 
+Created By: [Sean Boerhout](https://seanboe.github.io)
+
 Ok, I'll admit it. So far, everything has a been a little boring. Time to add some conditions
 to our code!
 

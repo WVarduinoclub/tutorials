@@ -13,13 +13,13 @@ Thanks to our (on-github) club members, some of which contributed here:
 
 <div style="display:inline">
   <a href="https://github.com/seanboe">
-    <img src="https://avatars.githubusercontent.com/u/73302811?s=70&v=4" style="border-radius: 50px">
+    <img src="https://avatars.githubusercontent.com/u/73302811?s=70&v=4" style="border-radius: 50px;" >
   </a>
 
   <a href="https://github.com/Shad0wSeven">
     <img src="https://avatars.githubusercontent.com/u/19739712?s=70&v=4" style="border-radius: 50px">
   </a>
-  <a href="https://github.com/Capt-MD-11">
+  <a href="https://github.com/CaptMD-11">
     <img src="https://avatars.githubusercontent.com/u/86084719?s=70&v=4" style="border-radius: 50px">
   </a>
   <!-- For some reason, this image is too large... probably because Ryland is using the default profile image.  -->

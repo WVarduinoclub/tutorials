@@ -1,5 +1,6 @@
 # The Basics
-Created by: Sean Boerhout
+
+Created By: [Sean Boerhout](https://seanboe.github.io)
 
 ### Variables and Data Types
 

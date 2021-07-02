@@ -1,6 +1,6 @@
 # Custom Functions
 
-Created By: Sean Boerhout
+Created By: [Sean Boerhout](https://seanboe.github.io)
 
 Suppose that you wanted to do something complicated over and over again... not in the sense of looping through something often,
 but rather you want a snippet of code to run at many places around your program. 

@@ -1,6 +1,6 @@
 # A Quick Recap
-Created By: Sean Boerhout
 
+Created By: [Sean Boerhout](https://seanboe.github.io)
 
 Here I'll give you a quick recap of what you've learned in the form of an example.
 

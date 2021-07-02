@@ -1,4 +1,4 @@
-site_name: WV Arduino Club tutorials
+site_name: WV Arduino Club Tutorials
 
 # github repository icon setup
 repo_url: https://github.com/WVarduinoclub/tutorials
@@ -12,8 +12,9 @@ copyright: Copyright &copy; 2021 WV Arduino Club
 # Code Highlighting
 markdown_extensions:
   - pymdownx.highlight
-  - pymdownx.superfences
   - pymdownx.tabbed
+  - pymdownx.superfences
+
 
 # Site navigation
 nav:
@@ -27,7 +28,8 @@ nav:
     - 'If Statements and Operators' : 'python-tutorials/lesson4.md'
     - 'For and While loops' : 'python-tutorials/lesson5.md'
     - 'Custom functions' : 'python-tutorials/lesson6.md'
-
+    - 'Libraries and Modules' : 'python-tutorials/lesson7.md'
+    - 'Putting it All Together' : 'python-tutorials/lesson8.md'
 
 theme:
   name: material
