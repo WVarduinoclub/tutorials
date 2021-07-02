@@ -14,7 +14,7 @@
     
     
       
-        <title>Libraries and Modules - WV Arduino Club tutorials</title>
+        <title>Libraries and Modules - WV Arduino Club Tutorials</title>
       
     
     
@@ -74,7 +74,7 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="WV Arduino Club tutorials" class="md-header__button md-logo" aria-label="WV Arduino Club tutorials" data-md-component="logo">
+    <a href="../.." title="WV Arduino Club Tutorials" class="md-header__button md-logo" aria-label="WV Arduino Club Tutorials" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -87,7 +87,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            WV Arduino Club tutorials
+            WV Arduino Club Tutorials
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -242,13 +242,13 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="WV Arduino Club tutorials" class="md-nav__button md-logo" aria-label="WV Arduino Club tutorials" data-md-component="logo">
+    <a href="../.." title="WV Arduino Club Tutorials" class="md-nav__button md-logo" aria-label="WV Arduino Club Tutorials" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
 
     </a>
-    WV Arduino Club tutorials
+    WV Arduino Club Tutorials
   </label>
   
     <div class="md-nav__source">
@@ -420,10 +420,52 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Libraries and Modules
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Libraries and Modules
       </a>
       
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#importing-and-basic-use" class="md-nav__link">
+    Importing and Basic use
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lesson8/" class="md-nav__link">
+        Putting it All Together
+      </a>
     </li>
   
 
@@ -453,6 +495,21 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#importing-and-basic-use" class="md-nav__link">
+    Importing and Basic use
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -469,6 +526,39 @@
                 
                 
                 <h1 id="libraries-and-modules">Libraries and Modules</h1>
+<p>Created By: <a href="https://seanboe.github.io">Sean Boerhout</a></p>
+<p>Nearly all programming language have libraries, or collections of code that perform a very specific task and 
+are available to the public to use. For example, python's <a href="https://docs.python.org/3/library/random.html"><code>random</code></a>
+library allows you to get random numbers, lists of numbers, and more, while <a href="https://faker.readthedocs.io/en/master/"><code>faker</code></a>
+allows you to get fake data about fake people, like a random name, address, email account, or country. </p>
+<p>While those libraries may seem niche and somewhat useless, nearly all projects require a library for something since they 
+can be so powerful. <a href="https://numpy.org"><code>numpy</code></a>, for example, is an extremely powerful in math-related functions. 
+<a href="https://www.tensorflow.org"><code>tensorflow</code></a> does machine learning.</p>
+<p>If you aren't using an ide that has a library built in, you may need to install it onto your computer with <a href="https://pip.pypa.io/en/stable/installing/"><strong>pip installer</strong></a>.
+Generally, libraries will give you the intructions to install them on their website</p>
+<h2 id="importing-and-basic-use">Importing and Basic use</h2>
+<p>Let's get started!</p>
+<p>Libraries are essentially large collections of code, just like anything you'd write. With the <code>import</code> function, you can 
+essentially copy-paste that code.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">random</span>
+</code></pre></div>
+<p>Functions associated with a library must be shown to be linked to a library. For example, random has a <em>method</em> (a function 
+made accessible by a <em>class</em>, which we'll learn more about later) which <em>returns</em> a random number between a given range
+called <code>randint()</code>. We can call it like this:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">random_number</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
+</code></pre></div>
+<p>Notice that <code>randint(0, 9)</code> is prefixed by a <code>random.</code>. This denotes the fact that <code>randint()</code> is defined by the <code>random</code> library
+and not by you. </p>
+<p>You might not always want to use the name of the library to prefix the method, however. To optimize this, you can use <code>as</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">random</span> <span class="k">as</span> <span class="nn">rdm</span>
+
+<span class="n">random_number</span> <span class="o">=</span> <span class="n">rdm</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
+</code></pre></div>
+<p>That's about it with libraries!</p>
+<p>If you want to konw the syntax of a function or what a function does, a quick google search for the documentation of the library
+would probably be the best course of action. </p>
                 
               
               
@@ -505,6 +595,20 @@
           </div>
         </a>
       
+      
+        <a href="../lesson8/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Putting it All Together
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
       
     </nav>
   
