@@ -1,5 +1,6 @@
 # Lists, Sets, Dictionaries, and Tuples
-Created By: Sean Boerhout
+
+Created By: [Sean Boerhout](https://seanboe.github.io)
 
 ### Lists
 We've already learned about variables, which allow us to store data in different chunks of memory. But what if 
