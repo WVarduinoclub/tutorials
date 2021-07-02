@@ -14,7 +14,7 @@
     
     
       
-        <title>A quick recap - WV Arduino Club Tutorials</title>
+        <title>Putting it All Together - WV Arduino Club Tutorials</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#a-quick-recap" class="md-skip">
+        <a href="#putting-it-all-together" class="md-skip">
           Skip to content
         </a>
       
@@ -93,7 +93,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              A quick recap
+              Putting it All Together
             
           </span>
         </div>
@@ -361,65 +361,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          A quick recap
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../lesson3/" class="md-nav__link">
         A quick recap
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#finished-code" class="md-nav__link">
-    Finished Code
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#try-it-yourself" class="md-nav__link">
-    Try it yourself
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#challenge" class="md-nav__link">
-    Challenge
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -475,11 +421,21 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../lesson8/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Putting it All Together
       </a>
+      
     </li>
   
 
@@ -509,35 +465,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#finished-code" class="md-nav__link">
-    Finished Code
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#try-it-yourself" class="md-nav__link">
-    Try it yourself
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#challenge" class="md-nav__link">
-    Challenge
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -548,65 +475,30 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/WVarduinoclub/tutorials/edit/master/docs/python-tutorials/lesson3.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/WVarduinoclub/tutorials/edit/master/docs/python-tutorials/lesson8.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="a-quick-recap">A Quick Recap</h1>
-<p>Created By: <a href="https://seanboe.github.io">Sean Boerhout</a></p>
-<p>Here I'll give you a quick recap of what you've learned in the form of an example.</p>
-<p>Suppose I wanted user input at a vending machine, where customers need to type in the drink that they want. 
-Using a dictionary, I can easily relate the name of that drink to a price:
-<div class="highlight"><pre><span></span><code><span class="n">drink_prices</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="s2">&quot;sprite&quot;</span> <span class="p">:</span> <span class="mf">2.50</span><span class="p">,</span>
-  <span class="s2">&quot;coke&quot;</span> <span class="p">:</span> <span class="mf">2.00</span><span class="p">,</span>
-  <span class="s2">&quot;fanta&quot;</span> <span class="p">:</span> <span class="mf">3.00</span>
-<span class="p">}</span>
-</code></pre></div>
-In order to get the user's input, I'll use a cool function called <code>input()</code>. It prompts python to 
-ask for your input and assigns the input to a string:
-<div class="highlight"><pre><span></span><code><span class="n">customer_drink</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
-</code></pre></div>
-Now we can ask someone for their desired drink and tell them the price! 
-<div class="highlight"><pre><span></span><code><span class="n">customer_drink</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">drink_prices</span><span class="p">[</span><span class="n">customer_drink</span><span class="p">])</span>
-</code></pre></div>
-But we can do better than that... let's make the process more friendly with some <code>print()</code>s.
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Welcome! What drink would you like? Please choose from one of the choices below:&quot;</span><span class="p">)</span> 
-<span class="nb">print</span><span class="p">(</span><span class="n">drink_prices</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+                <h1 id="putting-it-all-together">Putting it All Together</h1>
+<p>Alright, now let's put our skills to the test with a quick challenge. </p>
+<p>Write a program that lets the user pick a number between 1 and 100. The program will try to guess the number after 
+you tell it whether it's too high or too low. If the player wins the game, they should also be able to play again. It should work something like this:</p>
+<iframe src="https://trinket.io/embed/python3/2e4d3a434e?outputOnly=true" width="100%" height="250" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
-<span class="c1"># ask them for their drink and say the price</span>
-<span class="n">customer_drink</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span> <span class="n">customer_drink</span><span class="o">.</span><span class="n">title</span><span class="p">()</span> <span class="si">}</span><span class="s2">s costs </span><span class="si">{</span> <span class="n">drink_prices</span><span class="p">[</span><span class="n">customer_drink</span><span class="p">]</span> <span class="si">}</span><span class="s2"> dollars!&quot;</span><span class="p">)</span>
-</code></pre></div></p>
-<p>But, wait. What if the user makes a typo by using the wrong capitalization? We can ensure that the input
-is always read correctly:
-<div class="highlight"><pre><span></span><code><span class="n">customer_drink</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+<p>Here's a hint: </p>
+<p>To allow your program to come up with a random number, <code>import random</code> in your code. Then, use <code>randint()</code> to 
+get a random integer between some 2 numbers:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">random_number</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="c1"># a random number between 0 and 10!</span>
 </code></pre></div>
-Since all the keys in our dictionary are lowercase, this will fix that problem.</p>
-<h4 id="finished-code">Finished Code</h4>
-<p>Here's all that code put together:
-<div class="highlight"><pre><span></span><code><span class="n">drink_prices</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="s2">&quot;sprite&quot;</span> <span class="p">:</span> <span class="mf">2.50</span><span class="p">,</span>
-  <span class="s2">&quot;coke&quot;</span> <span class="p">:</span> <span class="mf">2.00</span><span class="p">,</span>
-  <span class="s2">&quot;fanta&quot;</span> <span class="p">:</span> <span class="mf">3.00</span>
-<span class="p">}</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Welcome! What drink would you like? Please choose from one of the choices below:&quot;</span><span class="p">)</span> 
-<span class="nb">print</span><span class="p">(</span><span class="n">drink_prices</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
-
-<span class="n">customer_drink</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span> <span class="n">customer_drink</span><span class="o">.</span><span class="n">title</span><span class="p">()</span> <span class="si">}</span><span class="s2">s costs </span><span class="si">{</span> <span class="n">drink_prices</span><span class="p">[</span><span class="n">customer_drink</span><span class="p">]</span> <span class="si">}</span><span class="s2"> dollars!&quot;</span><span class="p">)</span>
-</code></pre></div></p>
-<h4 id="try-it-yourself">Try it yourself</h4>
+<p>Try making it in your ide! You can even use this interactive console:</p>
 <iframe src="https://trinket.io/embed/python3/1a196fccc9" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
-<h3 id="challenge">Challenge</h3>
-<p>Create a fictional character that a user can learn about! You should use at least one dictionary, one input, and one list.</p>
-<p>Here is an example:</p>
-<iframe src="https://trinket.io/embed/python3/7a39be2117?outputOnly=true" width="100%" height="150" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<p><br></p>
+<p><center>Can't figure it out? Here is the <a href="https://py3.codeskulptor.org/#user306_o2BwxbKZ2gPVqEA.py">answer</a>.</center></p>
+<p><br></p>
                 
               
               
@@ -629,7 +521,7 @@ Since all the keys in our dictionary are lowercase, this will fix that problem.<
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../lesson2/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../lesson7/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -638,25 +530,11 @@ Since all the keys in our dictionary are lowercase, this will fix that problem.<
               <span class="md-footer__direction">
                 Previous
               </span>
-              Lists, Sets, Dictionaries, and Tuples
+              Libraries and Modules
             </div>
           </div>
         </a>
       
-      
-        <a href="../lesson4/" class="md-footer__link md-footer__link--next" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              If Statements and Operators
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
-        </a>
       
     </nav>
   
