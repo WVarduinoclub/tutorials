@@ -1,5 +1,7 @@
 # Putting it All Together
 
+Created By: [Sean Boerhout](https://seanboe.github.io)
+
 Alright, now let's put our skills to the test with a quick challenge. 
 
 Write a program that lets the user pick a number between 1 and 100. The program will try to guess the number after 
