@@ -7,6 +7,8 @@ repo_name: Arduino Club Tutorials
 # edit button specs (right now, the edit is enabled)
 # edit_uri: ""
 
+site_url: https://tutorials.wvarduinoclub.ml
+
 copyright: Copyright &copy; 2021 WV Arduino Club
 
 # Code Highlighting
