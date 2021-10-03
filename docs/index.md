@@ -3,7 +3,7 @@
 Find beginner programming tutorials right here! 
 
 Learn how to code in [python](https://wvarduinoclub.github.io/tutorials/python-tutorials/Setup/), ___or___ 
-arduino microcontrollers!
+[arduino microcontrollers](https://wvarduinoclub.github.io/tutorials/arduino-tutorials/arduino-presentation/)!
 
 
 # About
