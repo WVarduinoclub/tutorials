@@ -7,7 +7,7 @@ repo_name: Arduino Club Tutorials
 # edit button specs (right now, the edit is enabled)
 # edit_uri: ""
 
-site_url: https://tutorials.wvarduinoclub.ml
+site_url: https://wvarduinoclub.github.io/tutorials/
 
 copyright: Copyright &copy; 2021 WV Arduino Club
 
@@ -21,7 +21,6 @@ markdown_extensions:
 # Site navigation
 nav:
   - Home: 'index.md'
-  - About: 'about.md'
   - 'Python': 
     - 'Setting up python' : 'python-tutorials/Setup.md'
     - 'The Basics' : 'python-tutorials/lesson1.md'
@@ -32,6 +31,8 @@ nav:
     - 'Custom functions' : 'python-tutorials/lesson6.md'
     - 'Libraries and Modules' : 'python-tutorials/lesson7.md'
     - 'Putting it All Together' : 'python-tutorials/lesson8.md'
+  - 'Arduino':
+    - 'Arduino Presentation' : 'arduino-tutorials/arduino-presentation.md'
 
 theme:
   name: material
